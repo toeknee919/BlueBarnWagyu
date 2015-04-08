@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blue Barn Wagyu</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="bbw-head">
+<%= image_tag "bluebarnwagyu.jpg" , options = {:alt => "Blue_Barn_Wagyu", :id => "blue_barn_logo"}%>
+</div>
+
+
+<%= yield %>
+
+</body>
+</html>
